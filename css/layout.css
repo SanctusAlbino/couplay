@@ -127,11 +127,11 @@ aside {
     margin:0 5px;
 }*/
 .aside-wrap a::after {
-    content: "|";
+    content: '|';
     margin: 0 0 0 10px;
 }
 .aside-wrap a:nth-child(4):after {
-    content: "";
+    content: '';
 }
 address p {
     text-align: center;
@@ -177,7 +177,7 @@ address p {
     background-color: rgb(214, 51, 51);
 }
 .privacy {
-    display: none;  /* 단추 클릭하면 none을 해제*/
+    display: none;      /* 단추 클릭하면 none을 해제 */
     width: 600px;
     height: 500px;
     position: absolute;                 /* 위치속성 : 절대위치 */
@@ -191,4 +191,17 @@ address p {
     text-align: center;
     font-size: 30px;
     margin: 30px 0
+}
+.privacy p {
+    margin: 0 10%;
+}
+.close { /* 종속 선택자 : button 태그인데 class가 close인 요소 선택 */
+    background: rgb(214, 51, 51);
+    color: white;
+    width: 120px;
+    height: 50px;
+    position: absolute; /* 위치 : 절대 위치, 좌표 */
+    left: 300px;  /* 왼쪽 : 왼쪽에서 반대방향으로 50% 지점에 위치 */
+    top: 85%;     /* 윗쪽 : 윗쪽에서 반대방향으로 ?? 지점에 위치 */
+    margin-left: -60px; 
 }
